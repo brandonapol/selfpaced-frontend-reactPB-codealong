@@ -39,10 +39,9 @@ export default function DataTable() {
     const deleteData = () => {
         server_calls.delete(selectionModel);
         getData();
-        setTimeout( () => { window.location.reload() }, 1000 )
+        console.log(`selection model: ${selectionModel}`)
+        setTimeout( () => { window.location.reload() }, 500 )
     }
-
-    console.log(`selection model: ${selectionModel}`)
 
     return (
         <>

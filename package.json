@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && npm run build:css",
-    "build:css": "postcss src/input.css -o dist/output.css",
+    "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,7 +14,6 @@
     "@mui/material": "^5.11.0",
     "@mui/x-data-grid": "^5.17.16",
     "@reduxjs/toolkit": "^1.9.1",
-    "postcss-cli": "^10.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.41.0",
